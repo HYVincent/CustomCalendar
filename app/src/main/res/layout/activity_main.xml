@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:openxu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.openxu.calendar.CustomCalendar
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            openxu:mMonthRowL="@drawable/custom_calendar_row_left"
+            openxu:mMonthRowR="@drawable/custom_calendar_row_right"
+            openxu:mMonthRowSpac="20dip"
+
+            openxu:mTextSizeMonth="20sp"
+            openxu:mTextSizeWeek="17sp"
+            openxu:mTextSizeDay="17sp"
+
+            openxu:mTextColorMonth="#4b4b4b"
+            openxu:mTextColorWeek="#9e9e9d"
+            openxu:mSelectWeekTextColor="#f67633"
+            openxu:mTextColorDay="#686768"
+            openxu:mSelectTextColor="#ffffff"
+
+            openxu:mLineSpac="10dp"
+            openxu:mMonthSpac="20dp"
+
+            openxu:mDotRadius="5dp"
+
+            openxu:mCurrentBg="#ffffff"
+            openxu:mCurrentBgStrokeWidth="1.5dip"
+            openxu:mCurrentBgDashPath="@array/customCalendar_currentDay_bg_DashPath"
+            openxu:mSelectBg="#fe7f5c"
+            openxu:mSelectRadius="15dip" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+
+        <!-- <CalendarView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>-->
+    </LinearLayout>
+
+</ScrollView>
